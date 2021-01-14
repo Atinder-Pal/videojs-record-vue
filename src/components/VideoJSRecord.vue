@@ -104,7 +104,9 @@
                 // the blob object contains the recorded data that
                 // can be downloaded by the user, stored on server etc.
                 console.log('finished recording: ', this.player.recordedData);
-            });
+                // show save as dialog
+                player.record().saveAs({'video': 'recorded-video.webm'});
+            });           
 
             // error handling
             this.player.on('error', (element, error) => {
