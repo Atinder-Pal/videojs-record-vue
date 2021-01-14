@@ -36,9 +36,9 @@
                     loop: false,
                     width: 320,
                     height: 240,
-                    bigPlayButton: false,
+                    bigPlayButton: true,
                     controlBar: {
-                        volumePanel: false
+                        volumePanel: true
                     },
                     plugins: {
                         /*
