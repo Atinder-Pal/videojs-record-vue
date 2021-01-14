@@ -77,6 +77,10 @@
         },
         mounted() {
             /* eslint-disable no-console */
+
+            // apply some workarounds for opera browser
+            applyVideoWorkaround();
+
             this.player = videojs('#myVideo', this.options, () => {
                 // print version information at startup
                 var msg = 'Using video.js ' + videojs.VERSION +
