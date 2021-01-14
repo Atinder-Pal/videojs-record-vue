@@ -67,7 +67,7 @@
                         */
                         // configure videojs-record plugin
                         record: {
-                            audio: false,
+                            audio: true,
                             video: true,
                             debug: true
                         }
