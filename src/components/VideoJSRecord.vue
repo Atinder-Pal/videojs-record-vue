@@ -79,7 +79,7 @@
             /* eslint-disable no-console */
 
             // apply some workarounds for opera browser
-            applyVideoWorkaround();
+            //applyVideoWorkaround();
 
             this.player = videojs('#myVideo', this.options, () => {
                 // print version information at startup
@@ -105,7 +105,7 @@
                 // can be downloaded by the user, stored on server etc.
                 console.log('finished recording: ', this.player.recordedData);
                 // show save as dialog
-                player.record().saveAs({'video': 'recorded-video.webm'});
+                this.player.record().saveAs({'video': 'recorded-video.webm'});
             });           
 
             // error handling
